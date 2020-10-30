@@ -7,7 +7,7 @@ const getUserChats = async (req, res) => {
 	const chat2 = await Chat.find({ snd: username });
 
 	return res.json({
-		chat: [...chat1, ...chat2]
+		chats: [...chat1, ...chat2]
 	});
 }
 
