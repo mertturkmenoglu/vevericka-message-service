@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
-const Chat = require('./Chat');
+const Chat = require('../../../src/models/Chat');
 
-describe('Chat Model', () => {
+describe('Chat Model Unit Tests', () => {
     it('Should be invalid if parameter is empty object', (done) => {
         const chat = new Chat({})
 

@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
-const Message = require('./Message');
+const Message = require('../../../src/models/Message');
 
-describe('Message Model', function() {
+describe('Message Model Unit Tests', function() {
     it('Should be invalid if parameter is empty object', (done) => {
         const message = new Message({})
 
